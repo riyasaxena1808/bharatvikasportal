@@ -1,0 +1,327 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* css variable*/
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    color: black;
+    text-align: center;
+}
+#navbar li{
+    text-align: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#food{
+    margin: 34px 45px;
+}
+#logo img{
+    height: 56px;
+    margin: 34px 45px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Slabo 27px', serif;
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 697px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../image/cul.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    top: 0px;
+    left: 3px;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Slabo 27px', serif;
+}
+.h-primary{
+    font-family: 'Slabo 27px', serif;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.h-secondary{
+    font-family: 'Slabo 27px', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+/* services section*/
+
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    display: flex;
+    border: 2px solid cornflowerblue; 
+    width: 50%;
+    height: 300px;
+    padding: 34px;
+    margin: 2px 6px;
+    border-radius: 28px;
+    justify-content: center;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    
+}
+
+#services .box p{
+     font-family: 'Slabo 27px', serif;
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+    
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../image/pizza.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+#client img{
+    height: 124px;
+}
+
+/*Contact Section*/
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../image/login.jpg);
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Slabo 27px', serif;
+}*
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+
+.center{
+    text-align: center;
+}
+
+table{
+    background-color:lightgray;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    padding-bottom: 10px;
+    border-collapse: collapse;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.enrolled-schemes{
+    text-align: center;
+    font-family:'Slabo 27px', serif;
+    font-size: 5rem;
+    padding-top: 200px;
+}
+.searchbox2{
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+tr:hover{
+    background-color:lavenderblush;
+}
+
+tr:nth-child(even){
+    background-color: darkgrey;
+}
+tr:nth-child(even):hover{
+    background-color: lavenderblush;
+}
+th{
+    background-color: lavenderblush;
+}
+.available-schemes{
+    text-align: center;
+    font-family:'Slabo 27px', serif;
+    font-size: 5rem;
+    padding-top: 200px;
+}
+
+.signup{
+    font-family: 'Slabo 27px', serif;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 100px;
+}
+.form-group{
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    padding: inherit;
+    font-size: 2rem;
+}
+
+.container{
+    text-align: center;
+    border: 7px black;
+    width: 34px;
+    height: 100px;
+    margin: auto;
+    padding-top: 10px;
+}
+#btn{
+    justify-content: center;
+    font-size: 25px;
+    width: 700%;
+    margin-right: auto;
+}
+.logsub{
+    text-align: center;
+    border: 7px black;
+    width: 34px;
+    height: 100px;
+    margin: auto;
+}
+.enrbutton{
+    padding-top: 300px;
+    text-align: center;
+    border: 7px black;
+    width: 74px;
+    height: 100px;
+    margin: auto;
+}
+.availbutton{
+    text-align: center;
+    border: 7px black;
+    width: 74px;
+    height: 200px;
+    margin: auto;
+}
