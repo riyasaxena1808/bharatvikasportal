@@ -1,0 +1,6 @@
+.MainTable{
+    background-color: darkseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
